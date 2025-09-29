@@ -1,0 +1,26 @@
+{
+  "project": {
+    "id": "PGCIL-2025-TL-001",
+    "name": "765kV Transmission Line - Mumbai to Pune",
+    "voltage": "765kV",
+    "length_km": 150,
+    "terrain": "Hilly",
+    "complexity_index": 4,
+    "start_date": "2025-03-01",
+    "end_date": "2025-12-31"
+  },
+  "material": {
+    "type": "ACSR",
+    "specification": "Moose (490.5 mm\u00b2)",
+    "configuration": "Twin Bundle",
+    "current_price_per_kg": 485,
+    "total_required_tons": 452.8,
+    "total_cost_crores": 22.0
+  },
+  "features": {
+    "drone_monitoring": true,
+    "voice_ai": true,
+    "ar_interface": true,
+    "blockchain_auth": true
+  }
+}
