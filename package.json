@@ -1,0 +1,23 @@
+{
+  "name": "powergrid-materials-forecasting",
+  "version": "1.0.0",
+  "description": "POWERGRID AI-Powered Materials Demand Forecasting Dashboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "powergrid",
+    "forecasting",
+    "ai",
+    "materials"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/powergrid-materials-forecasting.git"
+  },
+  "homepage": "https://your-username.github.io/powergrid-materials-forecasting/"
+}
