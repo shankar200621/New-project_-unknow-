@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POWERGRID - AI-Powered Materials Forecasting</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                        <span class="logo-text">POWERGRID</span>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h1>AI-Powered Materials Forecasting</h1>
+                    <p class="subtitle">Intelligent Procurement Planning System</p>
+                </div>
+                <div class="header-status">
+                    <div class="status-indicator online">
+                        <span class="status-dot"></span>
+                        <span class="status-text">AI Systems Online</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="dashboard">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+            </button>
+            <button class="nav-tab" data-tab="drone">
+                <i class="fas fa-helicopter"></i>
+                <span>Drone Monitoring</span>
+            </button>
+            <button class="nav-tab" data-tab="voice">
+                <i class="fas fa-microphone"></i>
+                <span>Voice Assistant</span>
+            </button>
+            <button class="nav-tab" data-tab="ar">
+                <i class="fas fa-vr-cardboard"></i>
+                <span>AR Interface</span>
+            </button>
+            <button class="nav-tab" data-tab="blockchain">
+                <i class="fas fa-link"></i>
+                <span>Blockchain Tracker</span>
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Tab -->
+            <div class="tab-content active" id="dashboard">
+                <div class="dashboard-grid">
+                    <div class="summary-cards">
+                        <div class="summary-card primary">
+                            <div class="card-icon">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>452.8 tons</h3>
+                                <p>Total ACSR Required</p>
+                            </div>
+                        </div>
+                        <div class="summary-card success">
+                            <div class="card-icon">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>₹22.0 Crores</h3>
+                                <p>Total Cost Estimate</p>
+                            </div>
+                        </div>
+                        <div class="summary-card info">
+                            <div class="card-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Apr 2025</h3>
+                                <p>Peak Demand Month</p>
+                            </div>
+                        </div>
+                        <div class="summary-card accuracy">
+                            <div class="card-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>94%</h3>
+                                <p>Forecast Accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h2>Monthly ACSR Demand Forecast</h2>
+                            <p class="project-info">765kV Mumbai to Pune Transmission Line (150 km)</p>
+                        </div>
+                        <canvas id="demandChart"></canvas>
+                    </div>
+
+                    <div class="project-details">
+                        <h3>Project Overview</h3>
+                        <div class="detail-grid">
+                            <div class="detail-item">
+                                <label>Project ID:</label>
+                                <span>PGCIL-2025-TL-001</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Line Configuration:</label>
+                                <span>765kV Mumbai to Pune</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Distance:</label>
+                                <span>150 kilometers</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Terrain:</label>
+                                <span>Hilly (Complexity: 4/5)</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Material Type:</label>
+                                <span>ACSR Moose (490.5 mm²)</span>
+                            </div>
+                            <div class="detail-item">
+                                <label>Configuration:</label>
+                                <span>Twin Bundle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="optimization-panel">
+                        <h3>AI Optimization Recommendations</h3>
+                        <div class="recommendations">
+                            <div class="recommendation-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="rec-content">
+                                    <h4>Procurement Timing</h4>
+                                    <p>Split orders: 60% in Mar-Apr, 40% in Oct-Nov for optimal cost efficiency</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-percentage"></i>
+                                <div class="rec-content">
+                                    <h4>Cost Optimization</h4>
+                                    <p>Bulk purchase can reduce costs by 12-15%. Negotiate long-term contracts</p>
+                                </div>
+                            </div>
+                            <div class="recommendation-item">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div class="rec-content">
+                                    <h4>Risk Mitigation</h4>
+                                    <p>Monsoon impact: June-Sep. Plan alternative suppliers during peak season</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drone Monitoring Tab -->
+            <div class="tab-content" id="drone">
+                <div class="drone-dashboard">
+                    <div class="drone-header">
+                        <h2>Autonomous Drone Fleet Monitoring</h2>
+                        <div class="fleet-status">
+                            <span class="status-badge active">12 Drones Active</span>
+                            <span class="status-badge standby">3 On Standby</span>
+                        </div>
+                    </div>
+
+                    <div class="drone-content">
+                        <div class="live-feed">
+                            <div class="feed-header">
+                                <h3>Live Surveillance Feed</h3>
+                                <div class="ai-status">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI Detection Active</span>
+                                </div>
+                            </div>
+                            <div class="video-placeholder">
+                                <i class="fas fa-video"></i>
+                                <p>Drone Feed: Tower Inspection Sector 7</p>
+                                <div class="detection-overlay">
+                                    <div class="detection-box">
+                                        <span class="detection-label">Insulator Corrosion Detected</span>
+                                        <span class="confidence">96% Confidence</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alerts-panel">
+                            <h3>AI Detection Alerts</h3>
+                            <div class="alerts-list">
+                                <div class="alert-item critical">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                    </div>
+                                    <div class="alert-content">
+                                        <h4>Critical: Tower #127</h4>
+                                        <p>Corrosion detected on insulator</p>
+                                        <small>2 minutes ago</small>
+                                        <div class="required-materials">
+                                            <strong>Required:</strong> Porcelain insulators x6, Hardware clamps x12
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert-item warning">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="alert-content">
+                                        <h4>Warning: Tower #89</h4>
+                                        <p>Vegetation encroachment detected</p>
+                                        <small>15 minutes ago</small>
+                                        <div class="required-materials">
+                                            <strong>Action:</strong> Vegetation clearing, conductor inspection
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Voice Assistant Tab -->
+            <div class="tab-content" id="voice">
+                <div class="voice-dashboard">
+                    <div class="voice-header">
+                        <h2>AI Voice Assistant</h2>
+                        <p>Ask questions about materials, forecasts, and inventory in natural language</p>
+                    </div>
+
+                    <div class="voice-interface">
+                        <div class="voice-activation">
+                            <button class="voice-btn" id="voiceBtn">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                            <p class="voice-status">Click to activate voice recognition</p>
+                            <div class="language-selector">
+                                <label>Language:</label>
+                                <select>
+                                    <option value="en">English</option>
+                                    <option value="hi">हिंदी</option>
+                                    <option value="mr">मराठी</option>
+                                    <option value="gu">ગુજરાતી</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="conversation-history">
+                            <div class="conversation-item user">
+                                <div class="message-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="message-content">
+                                    <p>"How much ACSR conductor is needed for the Mumbai-Pune line?"</p>
+                                </div>
+                            </div>
+                            <div class="conversation-item assistant">
+                                <div class="message-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <p>Based on AI analysis, the Mumbai-Pune 765kV transmission line requires 452.8 tons of ACSR Moose conductor. Peak demand occurs in April 2025 with 81.5 tons needed that month. Current cost estimation is ₹22 crores with 94% forecast confidence.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sample-queries">
+                            <h3>Sample Voice Commands</h3>
+                            <div class="query-buttons">
+                                <button class="query-btn" data-query="What is the current inventory status?">
+                                    <i class="fas fa-warehouse"></i>
+                                    Inventory Status
+                                </button>
+                                <button class="query-btn" data-query="Show me corrosion alerts for this month">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    Corrosion Alerts
+                                </button>
+                                <button class="query-btn" data-query="When should we schedule maintenance for Tower 127?">
+                                    <i class="fas fa-calendar-check"></i>
+                                    Schedule Maintenance
+                                </button>
+                                <button class="query-btn" data-query="What materials do we need for emergency repairs?">
+                                    <i class="fas fa-tools"></i>
+                                    Emergency Materials
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AR Interface Tab -->
+            <div class="tab-content" id="ar">
+                <div class="ar-dashboard">
+                    <div class="ar-header">
+                        <h2>Augmented Reality Field Interface</h2>
+                        <p>AR visualization for field engineers with real-time material specifications</p>
+                    </div>
+
+                    <div class="ar-viewer">
+                        <div class="ar-scene">
+                            <div class="tower-3d">
+                                <i class="fas fa-broadcast-tower"></i>
+                                <div class="ar-overlay">
+                                    <div class="spec-callout" style="top: 20%; left: 30%;">
+                                        <div class="callout-point"></div>
+                                        <div class="callout-content">
+                                            <h4>Conductor Specification</h4>
+                                            <p>ACSR Moose 490.5 mm²</p>
+                                            <p>Twin Bundle Configuration</p>
+                                            <span class="status available">In Stock</span>
+                                        </div>
+                                    </div>
+                                    <div class="spec-callout" style="top: 60%; left: 70%;">
+                                        <div class="callout-point"></div>
+                                        <div class="callout-content">
+                                            <h4>Insulator Assembly</h4>
+                                            <p>Porcelain String Type</p>
+                                            <p>Rating: 765kV</p>
+                                            <span class="status warning">Low Stock</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ar-controls">
+                            <h3>AR Features</h3>
+                            <div class="feature-toggles">
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                    Material Specifications
+                                </label>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                    Inventory Status
+                                </label>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                    Installation Guides
+                                </label>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                    Safety Protocols
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blockchain Tab -->
+            <div class="tab-content" id="blockchain">
+                <div class="blockchain-dashboard">
+                    <div class="blockchain-header">
+                        <h2>Blockchain Material Authentication</h2>
+                        <p>End-to-end supply chain transparency and tamper-proof material tracking</p>
+                    </div>
+
+                    <div class="blockchain-scanner">
+                        <div class="scanner-area">
+                            <div class="qr-placeholder">
+                                <i class="fas fa-qrcode"></i>
+                                <p>Scan QR Code on Material</p>
+                                <button class="scan-btn">Start Scanner</button>
+                            </div>
+                        </div>
+
+                        <div class="material-journey">
+                            <h3>Material Authentication Result</h3>
+                            <div class="journey-steps">
+                                <div class="step completed">
+                                    <div class="step-icon">
+                                        <i class="fas fa-industry"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Manufacturing</h4>
+                                        <p>Sterlite Technologies Ltd.</p>
+                                        <small>Batch: ST-2025-001</small>
+                                        <div class="timestamp">2024-12-15 09:30:00</div>
+                                    </div>
+                                </div>
+                                <div class="step completed">
+                                    <div class="step-icon">
+                                        <i class="fas fa-clipboard-check"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Quality Testing</h4>
+                                        <p>Certified to IS 398-5 standards</p>
+                                        <small>Test Report: QC-2025-089</small>
+                                        <div class="timestamp">2024-12-16 14:45:00</div>
+                                    </div>
+                                </div>
+                                <div class="step active">
+                                    <div class="step-icon">
+                                        <i class="fas fa-warehouse"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Warehouse Storage</h4>
+                                        <p>Mumbai Central Warehouse</p>
+                                        <small>Location: Bay A-15</small>
+                                        <div class="timestamp">Current Status</div>
+                                    </div>
+                                </div>
+                                <div class="step pending">
+                                    <div class="step-icon">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <div class="step-content">
+                                        <h4>Installation</h4>
+                                        <p>Awaiting deployment</p>
+                                        <small>Target: Tower #45-52</small>
+                                        <div class="timestamp">Scheduled</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
