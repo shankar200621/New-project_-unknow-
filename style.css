@@ -214,22 +214,22 @@ body {
 }
 
 .chart-container {
-  grid-area: chart;
-  background: white;
+  max-width: 700px; /* limit max width so it doesn't grow too large */
+  margin: 0 auto; /* center */
   padding: 2rem;
+  background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   overflow-x: auto;
-  max-width: 100%;
 }
 
-/* Make sure any canvas or SVG chart fits inside container */
 .chart-container canvas {
-  display: block;
-  max-width: 100% !important;
   width: 100% !important;
-  height: 400px; /* or another fixed height */
+  height: auto !important;
+  max-height: 350px; /* limit max height */
+  display: block;
 }
+
 
 
 
