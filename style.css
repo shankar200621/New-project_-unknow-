@@ -214,21 +214,23 @@ body {
 }
 
 .chart-container {
-  max-width: 700px; /* limit max width so it doesn't grow too large */
-  margin: 0 auto; /* center */
+  max-width: 700px;
+  max-height: 400px; /* fixed height constraint */
+  margin: 0 auto;
   padding: 2rem;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   overflow-x: auto;
+  position: relative;
 }
 
 .chart-container canvas {
   width: 100% !important;
-  height: auto !important;
-  max-height: 350px; /* limit max height */
+  height: 100% !important; /* fill the container height */
   display: block;
 }
+
 
 
 
