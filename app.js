@@ -86,7 +86,7 @@ function createDemandChart() {
         },
         options: {
       responsive: true,
-    maintainAspectRatio: true, // Keep proportions fixed
+    maintainAspectRatio: false, // Keep proportions fixed
     aspectRatio: 2, // Width is 2x the height, adjust as needed
     animation: { duration: 0 },
 
