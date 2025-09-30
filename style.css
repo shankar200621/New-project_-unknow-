@@ -241,6 +241,11 @@ body {
     color: #6b7280;
     font-weight: 500;
 }
+#demandChart{
+    height:100% !important;
+    width:100% !important;
+    display:block;
+}
 
 /* Project Details */
 .project-details {
