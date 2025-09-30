@@ -85,9 +85,11 @@ function createDemandChart() {
             }]
         },
         options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            animation:{duration:0},
+      responsive: true,
+    maintainAspectRatio: true, // Keep proportions fixed
+    aspectRatio: 2, // Width is 2x the height, adjust as needed
+    animation: { duration: 0 },
+
             plugins: {
                 title: { display: false },
                 legend: {
