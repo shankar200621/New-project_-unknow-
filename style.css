@@ -546,3 +546,18 @@ body {
         font-size: 1.5rem;
     }
 }
+.ar-overlay, spec-callout, callout-content {
+
+font-size: 1rem !important;
+
+max-width: 220px !important;
+
+white-space: normal !important;
+
+overflow: visible !important;
+
+position: absolute;
+}
+.spec-callout i {
+
+font-size: 2rem !important;}
