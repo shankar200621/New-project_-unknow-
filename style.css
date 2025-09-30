@@ -213,7 +213,6 @@ body {
     font-weight: 500;
 }
 
-/* Chart Container */
 .chart-container {
   grid-area: chart;
   background: white;
@@ -224,13 +223,14 @@ body {
   max-width: 100%;
 }
 
-/* Ensure the chart always fits and is responsive */
+/* Make sure any canvas or SVG chart fits inside container */
 .chart-container canvas,
 .chart-container svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 
 
 .chart-header {
