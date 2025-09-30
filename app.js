@@ -87,6 +87,7 @@ function createDemandChart() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            animation:{duration:0},
             plugins: {
                 title: { display: false },
                 legend: {
