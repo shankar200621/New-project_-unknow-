@@ -215,15 +215,23 @@ body {
 
 /* Chart Container */
 .chart-container {
-    grid-area: chart;
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    height:400px !important;
-    position:realitive;
-    max-width:100%;
+  grid-area: chart;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+  max-width: 100%;
 }
+
+/* Ensure the chart always fits and is responsive */
+.chart-container canvas,
+.chart-container svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
 .chart-header {
     margin-bottom: 2rem;
